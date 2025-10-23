@@ -11,5 +11,6 @@ public static void main(String[] args) {
 	System.out.println("Enter another number: ");
 	int num2 = s.nextInt();
 	System.out.println("Addition: "+add(num1, num2));
+	s.close();
 }
 }
