@@ -39,6 +39,7 @@ public static void printPattern4(int num) {
 		for(int y=1;y<=(num-i)+1;y++) {
 			System.out.println("*");
 		}
+		System.out.println();
 	}
 }
 public static void printPattern5(int num) {
@@ -104,16 +105,16 @@ public static void printPattern8(int num) {
 			System.out.print(" ");
 		}
 		for(int j=1;j<=i;j++) {
-			System.out.println("*");
+			System.out.print("*");
 		}
 		System.out.println();
 	}
 	for(int i=1;i<=num;i++) {
 		for(int y=1;y<=((num*2)-(i*2))+2;y++) {
-			System.out.println("*");
+			System.out.print("*");
 		}
 		for(int j=1;j<=(i*2)-2;j++) {
-			System.out.println(" ");
+			System.out.print(" ");
 		}
 		System.out.println();
 	}
@@ -155,7 +156,7 @@ for(int i=1;i<=num;i++) {
 public static void printPattern11(int num) {
 	for(int i=1;i<=num;i++) {
 		for(int j=1;j<i;j++) {
-			System.out.println(" ");
+			System.out.print(" ");
 		}
 		for(int j=1;j<=(num-i)+1;j++) {
 			System.out.print(i);
@@ -179,7 +180,20 @@ public static void printPattern12(int num) {
 public static void main(String[] args) {
 	System.out.println("Enter a number");
 	Scanner s = new Scanner(System.in);
-	printPattern1()
+	int n = s.nextInt();
+	printPattern1(n);
+	printPattern2(n);
+	printPattern3(n);
+	printPattern4(n);
+	printPattern5(n);
+	printPattern6(n);
+	printPattern7(n);
+	printPattern7(n);
+	printPattern8(n);
+	printPattern9(n);
+	printPattern10(n);
+	printPattern11(n);
+	printPattern12(n);
 	s.close();
 }
 }

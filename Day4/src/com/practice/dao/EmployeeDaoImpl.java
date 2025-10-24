@@ -13,15 +13,13 @@ public class EmployeeDaoImpl implements EmployeeDao{
     }
 	@Override
 	public boolean addEmployee(Employee employee) {
-		// TODO Auto-generated method stub
 		emp.add(employee);
 		return true;
 	}
 
 	@Override
 	public boolean removeEmployee(String empname) {
-	    emp.remove(new Employee(empname));
-		return false;
+	   return emp.remove(new Employee(empname));
 	}
 
 	@Override
