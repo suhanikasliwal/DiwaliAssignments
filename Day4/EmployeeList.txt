@@ -1,0 +1,4 @@
+Employee [empId=1, empname=Suhani, empRole=SDE]
+Employee [empId=2, empname=Santosh, empRole=Engineer]
+Employee [empId=3, empname=S, empRole=sde]
+Employee [empId=4, empname=Abhijeet, empRole=SDE-1]
